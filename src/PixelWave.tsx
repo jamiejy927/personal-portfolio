@@ -280,15 +280,29 @@ const PixelWave: React.FC<PixelWaveProps> = ({
                                 </div>
                             </div>
                         )}
-                        {activeModal === 'work' && (
-                            <div style={{ display: 'flex', flexDirection: 'column', gap: '25px' }}>
+{activeModal === 'work' && (
+                            <div style={{ display: 'flex', flexDirection: 'column', gap: '25px', textAlign: 'left' }}>
                                 <div>
-                                    <p style={{ fontWeight: '700', marginBottom: '5px' }}>Jamie's Portfolio</p>
-                                    <p style={{ fontSize: '13px', color: '#555', marginBottom: '5px' }}>Personal portfolio website designed and built with HTML and CSS.</p>
+                                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '5px' }}>
+                                        <p style={{ fontWeight: '700', fontSize: '15px', color: '#111', margin: 0 }}>Jamie's portfolio</p>
+                                        <p style={{ fontSize: '13px', margin: 0 }}>
+                                            <a href="https://eunjeongyang.netlify.app/" target="_blank" rel="noopener noreferrer" className="contact-link" style={{ color: '#111', textDecoration: 'none', fontWeight: '600' }}>Live</a>
+                                            <span style={{ margin: '0 6px', color: '#888' }}>·</span>
+                                            <a href="https://github.com/jamiejy927/midterm-portfolio" target="_blank" rel="noopener noreferrer" className="contact-link" style={{ color: '#111', textDecoration: 'none', fontWeight: '600' }}>GitHub</a>
+                                        </p>
+                                    </div>
+                                    <p style={{ fontSize: '13px', color: '#555', margin: 0, lineHeight: '1.5' }}>Personal portfolio website designed and built with HTML and CSS.</p>
                                 </div>
                                 <div style={{ borderTop: '1px dashed #bbb', paddingTop: '20px' }}>
-                                    <p style={{ fontWeight: '700', marginBottom: '5px' }}>Past Lives</p>
-                                    <p style={{ fontSize: '13px', color: '#555', marginBottom: '5px' }}>A website inspired by the film Past Lives, focusing on layout and visual storytelling.</p>
+                                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '5px' }}>
+                                        <p style={{ fontWeight: '700', fontSize: '15px', color: '#111', margin: 0 }}>Past Lives</p>
+                                        <p style={{ fontSize: '13px', margin: 0 }}>
+                                            <a href="https://past-lives-website.netlify.app/" target="_blank" rel="noopener noreferrer" className="contact-link" style={{ color: '#111', textDecoration: 'none', fontWeight: '600' }}>Live</a>
+                                            <span style={{ margin: '0 6px', color: '#888' }}>·</span>
+                                            <a href="https://github.com/jamiejy927/past-lives-website" target="_blank" rel="noopener noreferrer" className="contact-link" style={{ color: '#111', textDecoration: 'none', fontWeight: '600' }}>GitHub</a>
+                                        </p>
+                                    </div>
+                                    <p style={{ fontSize: '13px', color: '#555', margin: 0, lineHeight: '1.5' }}>A website inspired by the film Past Lives, focusing on layout and visual storytelling.</p>
                                 </div>
                             </div>
                         )}
